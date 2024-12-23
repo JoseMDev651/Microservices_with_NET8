@@ -14,3 +14,16 @@ Postman
     dotnet add package  Microsoft.EntityFrameworkCore
     dotnet add package  Microsoft.EntityFrameworkCore.Design
     dotnet add package  Microsoft.EntityFrameworkCore.InMemory
+    dotnet add package  Microsoft.EntityFrameworkCore.SqlServer
+3.- Create Models
+	Create forlder Models
+	Create model file inside (in this Platform.cs)
+4.- DbContext
+	New folder (Data)
+	New file inside (AppDbContext.cs)
+	add AppDbContext to program.cs (builder.Services)
+5.- Repository
+	Add new file in Data folder -> IPlatformRepo (for dependency injection)
+	Add new file PlatformRepo.cs
+		
+	
