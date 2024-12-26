@@ -22,8 +22,17 @@ Postman
 	New folder (Data)
 	New file inside (AppDbContext.cs)
 	add AppDbContext to program.cs (builder.Services)
-5.- Repository
+5.- Repository (Data folder)
 	Add new file in Data folder -> IPlatformRepo (for dependency injection)
-	Add new file PlatformRepo.cs
+	Add new file PlatformRepo.cs -> Implementation Interface IPlatformRepo functions
+
+6.- Services(Program.cs)
+	AddDBContext (In this example InMem but you can change to SQLServer). For development environments is more quick In Mem.
+	Add.Scopped
+7.- Terminal
+	dotnet build
+8.- Repository (Data forlder)
+	Add file PrepDb.cs
+	
 		
 	
