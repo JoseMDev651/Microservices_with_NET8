@@ -32,7 +32,24 @@ Postman
 7.- Terminal
 	dotnet build
 8.- Repository (Data forlder)
-	Add file PrepDb.cs
+	Add file PrepDb.cs.
+	Note: Add in Program.cs PrepDb.PrepPopulation(app);
+	Terminal: dotnet build
+		  dotnet run
+9.- DTOs
+	Create a new folder Dtos
+	Create a new file inside Dtos -> PlatformReadDto.cs
+	Create a new file inside Dtos -> PlatformCrateDto.cs
+10.- Automapper
+	PlatformService.csproj (<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />)
+	Registry automapper for dependency injection
+		Program.cs: builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+	New folder Profiles
+	New file PlatformsProfile.cs
+	
+
+	
+ 
 	
 		
 	
